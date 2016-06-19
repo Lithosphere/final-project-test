@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vroomio</title>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script type="text/javascript" src="js/phaser.js"></script>
+  <script type="text/javascript" src="js/boot.js"></script>
+  <script type="text/javascript" src="js/preload.js"></script>
+  <script type="text/javascript" src="js/game.js"></script>
+
+
+</head>
+<body>
+
+  <div class="pages">
+
+  <!-- <div class="testing2"> -->
+    <div style="height:100%;width:16%;position:relative;margin-right:0px;margin-left:1px;float:left;border: 2px solid black;">
+      <div style = "border-bottom:2px solid black;height:50%;overflow:auto">
+        <table class="table">
+          <thead>
+            <th colspan="3">Current Online Users</th>
+          </thead>
+          <tbody class="online">
+          <button type="button" class="hostvideo" data-toggle="modal" data-target="#myModal"> Host Video Chat</button>
+          </tbody>
+         
+        </table>
+
+      </div>
+
+            <!-- Button trigger modal -->
+
+
+      <!-- Modal -->
+     <div class="clearfix"> 
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">Video Chat</h4>
+            </div>
+            <div class="modal-body"  >
+               <iframe src="https://appear.in/your-room-name" id ="iframe" width="640" height="480" frameborder="0"></iframe>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    
+      <div style = "height: 50%;overflow:auto;margin:0px;">
+        <table class="table" >
+          <tbody>
+            <tr>
+              <td>456</td>
+              <td>456</td>
+            </tr>
+            <tr>
+              <td>456</td>
+              <td>456</td>
+            </tr>
+            <tr>
+              <td>456</td>
+              <td>456</td>
+            </tr>
+            <tr>
+              <td>456</td>
+              <td>456</td>
+            </tr>
+            <tr>
+              <td>456</td>
+              <td>456</td>
+            </tr>
+            <tr>
+              <td>456</td>
+              <td>456</td>
+            </tr>
+            <tr>
+              <td>456</td>
+              <td>456</td>
+            </tr>
+            <tr>
+              <td>456</td>
+              <td>456</td>
+            </tr>
+            <tr>
+              <td>456</td>
+              <td>456</td>
+            </tr>
+            <tr>
+              <td>456</td>
+              <td>456</td>
+            </tr>
+            <tr>
+              <td>456</td>
+              <td>456</td>
+            </tr>
+            <tr>
+              <td>456</td>
+              <td>456</td>
+            </tr>
+            <tr>
+              <td>456</td>
+              <td>456</td>
+            </tr>
+
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+<!-- width:58%; height:(60*58)/(63/77)% ; -->
+    <div id="gameDiv" class="test1" style="width:58%; height:(60*58)/(63/77)%;display: inline-block;vertical-align:top;"></div>
+
+    <li class="chat page" style="border:2px solid black;display: inline-block">
+      <div class="chatArea">
+        <ul class="messages"></ul>
+      </div>
+      <input class="inputMessage" placeholder="Type here..."/>
+    </li>
+  </div>   
+
+    <li class="login page">
+      <div class="form">
+        <h1 class="title2">Welcome To Vroomio!</h1>
+        <h3 class="title">Please enter your username</h3>
+        <input class="usernameInput" type="text" maxlength="14" />
+      </div>
+    </li>
+
+<!--   </div>
+ -->
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="js/main.js"></script>
+
+  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+
+  <!-- <script src="/main.js"></script> -->
+</body>
+</html>
